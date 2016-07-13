@@ -1,0 +1,26 @@
+{
+  "name": "coca_scripts",
+  "version": "0.0.1",
+  "private": true,
+  "author": "David Larrimore <davidlarrimore@gmail.com>",
+  "description": "Gulp Scripts to support COCA Website Development",
+  "dependencies": {
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/COCAFoundation/coca_devops.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/COCAFoundation/coca_devops/issues"
+  },
+  "homepage": "https://github.com/COCAFoundation/coca_devops#readme"
+}
