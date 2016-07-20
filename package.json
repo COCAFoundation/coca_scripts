@@ -5,6 +5,7 @@
   "author": "David Larrimore <davidlarrimore@gmail.com>",
   "description": "Gulp Scripts to support COCA Website Development",
   "dependencies": {
+    "gulp": "^3.9.1"
   },
   "engines": {
     "node": "0.10.x"

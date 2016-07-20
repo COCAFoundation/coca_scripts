@@ -1,0 +1,58 @@
+# CONFIGURATION FILE FOR RUNNING BACKUP AND RESTORE SCRIPTS
+##########################
+#      JOOMLA CONFIG     #
+##########################
+## Development Environment
+dev_joomla_config_file="config/dev-configuration.php"
+## Test Environment
+test_joomla_config_file="config/test-configuration.php"
+## Production Environment
+prod_joomla_config_file="config/configuration.php"
+##########################
+#      SSH CONFIG     #
+##########################
+## Development Environment
+dev_ssh_host="mywebserver.com"
+## Test Environment
+test_ssh_host="mywebserver.com"
+## Production Environment
+prod_ssh_host="mywebserver.com"
+##########################
+#     DATABASE CONFIG    #
+##########################
+## Development Environment
+dev_database_host="mysql.mywebsite.org"
+dev_database_db=""
+dev_database_user=""
+dev_database_password=""
+## Test Environment Environment
+test_database_host="mysql.mywebsite.org"
+test_database_db=""
+test_database_user=""
+test_database_password=""
+## Prod Environment Environment
+prod_database_host="mysql.mywebsite.org"
+prod_database_db=""
+prod_database_user=""
+prod_database_password=""
+##########################
+#       FTP CONFIG       #
+##########################
+## Development Environment
+dev_ftp_host="ftp.mywebsite.org"
+dev_ftp_user=""
+dev_ftp_password=""
+dev_ftp_base_directory="dev"
+dev_ftp_base_path="dev/"
+## Test Environment
+test_ftp_host="ftp.mywebsite.org"
+test_ftp_user=""
+test_ftp_password=""
+test_ftp_base_directory="test"
+test_ftp_base_path="test/"
+## Production Environment
+prod_ftp_host="ftp.mywebsite.org"
+prod_ftp_user=""
+prod_ftp_password=""
+prod_ftp_base_directory="production"
+prod_ftp_base_path="production/"
