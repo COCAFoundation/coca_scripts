@@ -8,6 +8,10 @@ echo "********************************" >&2
 echo "Reading Configuration File" >&2
 source config/script.cfg
 
+# ADDED for OSX MYSQL Compatability
+export PATH=${PATH}:/usr/local/mysql/bin
+
+
 ## DESTINATION ENVIRONMENT VARIABLES
 # SSH
 destination_ssh_host=$dev_ssh_host

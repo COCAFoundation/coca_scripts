@@ -84,4 +84,5 @@ rm site-backup.zip
 
 # UPDATE CONFIGURATION.PHP
 echo "Updating destination Joomla configuration file" >&2
+ssh $destination_ftp_user@$destination_ssh_host "rm $destination_ftp_base_directory/configuration.php"
 scp $destination_joomla_config_file $destination_ftp_user@$destination_ssh_host:$destination_ftp_base_directory/configuration.php
