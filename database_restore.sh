@@ -124,8 +124,12 @@ if [ "$runScript" = true ] ; then
 
   # CREATE DROP/TRUNCATE SCRIPTS
   echo "*Creating Drop/Truncate Scripts for destination database" >&2
-  mysql -N -h $destination_database_host --database=$destination_database_db --user=$destination_database_user --password=$destination_database_password < scripts/mysql_create_truncate.sql > working/tmp_mysql_truncate.sql
-  mysql -N -h $destination_database_host --database=$destination_database_db --user=$destination_database_user --password=$destination_database_password < scripts/mysql_create_drop.sql > working/tmp_mysql_drop.sql
+
+  sed "s/placeHolder/$destination_database_db/g" scripts/mysql_create_truncate.sql > working/mysql_create_truncate.sql
+  sed "s/placeHolder/$destination_database_db/g" scripts/mysql_create_drop.sql > working/mysql_create_drop.sql
+
+  mysql -N -h $destination_database_host --database=$destination_database_db --user=$destination_database_user --password=$destination_database_password < working/mysql_create_truncate.sql > working/tmp_mysql_truncate.sql
+  mysql -N -h $destination_database_host --database=$destination_database_db --user=$destination_database_user --password=$destination_database_password < working/mysql_create_drop.sql > working/tmp_mysql_drop.sql
 
   # RUN DROP/TRUNCATE SCRIPTS AND RESTORE DATABASE
   echo "*Performing Restore" >&2

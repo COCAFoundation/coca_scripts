@@ -4,9 +4,9 @@
 runScript=true
 
 
-echo ''
-echo ''
-echo 'Running restore_all.sh'
+echo "********************************" >&2
+echo "RUNNING RESTORE_ALL.SH" >&2
+echo "********************************" >&2
 echo ''
 echo ''
 

@@ -142,11 +142,11 @@ if [ "$runScript" = true ] ; then
 
   # REMOVE OLD DEV DIRECTORY
   echo "deleting old destination site" >&2
-  ssh $destination_ftp_user@$destination_ssh_host "rm -r dev"
+  ssh $destination_ftp_user@$destination_ssh_host "rm -r $destination_ftp_base_directory"
 
   # CLEAR OUT DEV
   echo "cleaning up temporary directories" >&2
-  ssh $destination_ftp_user@$destination_ssh_host "mv unzip/$source_ftp_base_directory dev"
+  ssh $destination_ftp_user@$destination_ssh_host "mv unzip/$source_ftp_base_directory $destination_ftp_base_directory"
 
   # REMOVE WORKING DIRECTORIES
   ssh $destination_ftp_user@$destination_ssh_host "rm -r unzip"

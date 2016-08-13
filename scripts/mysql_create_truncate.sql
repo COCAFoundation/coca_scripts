@@ -1,1 +1,1 @@
-SELECT CONCAT('truncate table coca_dev.', table_name, ';') FROM information_schema.tables WHERE TABLE_SCHEMA LIKE "coca_dev";
+SELECT CONCAT('truncate table placeHolder.', table_name, ';') FROM information_schema.tables WHERE TABLE_SCHEMA LIKE "placeHolder";
